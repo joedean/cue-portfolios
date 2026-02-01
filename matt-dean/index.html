@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matt Dean - Portfolio</title>
+  <meta name="description" content="Professional portfolio for Matt Dean" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1a1a1a;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .headshot {
+      margin-bottom: 20px;
+    }
+    .headshot img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
+    }
+    .union-status {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .physical-info {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .contact-info {
+      font-size: 0.85rem;
+      color: #666;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+    section {
+      margin-bottom: 32px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 4px 8px 4px 0;
+      vertical-align: top;
+      font-size: 0.9rem;
+    }
+    .credit-show {
+      width: 35%;
+      font-style: italic;
+    }
+    .credit-role {
+      width: 30%;
+    }
+    .credit-theater {
+      width: 35%;
+    }
+    .training-institution {
+      width: 40%;
+      font-weight: 600;
+    }
+    .training-discipline {
+      width: 30%;
+    }
+    .training-teacher {
+      width: 30%;
+    }
+    .skills-section p {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .gallery-img {
+      width: 150px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      font-size: 0.75rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 24px 16px; }
+      h1 { font-size: 1.5rem; }
+      .headshot img { width: 160px; height: 200px; }
+      td { font-size: 0.8rem; padding: 3px 4px 3px 0; }
+      .gallery-img { width: 120px; height: 150px; }
+    }
+    @media print {
+      body { background: white; }
+      .container { padding: 0; max-width: none; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="headshot">
+        <img src="/api/headshots/file/imported_61ac74ef-5535-4a80-aefa-36574e595bd3.webp" alt="Matt Dean headshot" />
+      </div>
+      <h1>Matt Dean</h1>
+      <p class="union-status">AEA</p>
+      <p class="physical-info">5&#039;11&quot; &middot; Brown Hair &middot; Blue Eyes</p>
+      <p class="contact-info">(323) 957-6680 | www.msaagency.com</p>
+    </header>
+
+    <main>
+      <section class="credits-section">
+        <h2>Musical Theatre</h2>
+        <table class="credits-table">
+          <tbody>
+            <tr>
+              <td class="credit-show">Billy Elliot the Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Children&#039;s Musical Theater San Jose</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot the Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Ocean State Theatre Company</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot the Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">The Phoenix Theatre Company</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot the Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Berkeley Playhouse</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot the Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Cape Rep Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney&#039;s Newsies</td>
+              <td class="credit-role">Mush</td>
+              <td class="credit-theater">The Phoenix Theatre Company</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney&#039;s The Little Mermaid</td>
+              <td class="credit-role">Ensemble</td>
+              <td class="credit-theater">The Muny</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney’s The Little Mermaid</td>
+              <td class="credit-role">Ensemble</td>
+              <td class="credit-theater">The Muny</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney’s Newsies</td>
+              <td class="credit-role">Mush</td>
+              <td class="credit-theater">Phoenix Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot The Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Ocean State Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot The Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Phoenix Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">She Loves Me</td>
+              <td class="credit-role">Detective Keller (Dance Captain)</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Assassins</td>
+              <td class="credit-role">Sam Byck</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">The SpongeBob Musical</td>
+              <td class="credit-role">Sheldon J. Plankton</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Young Frankenstein</td>
+              <td class="credit-role">Frederick Frankenstein</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Mamma Mia!</td>
+              <td class="credit-role">Sky Rymand</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Bright Star</td>
+              <td class="credit-role">Billy Cane</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">West Side Story</td>
+              <td class="credit-role">Baby John</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Billy Elliot The Musical</td>
+              <td class="credit-role">Billy</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">She Loves Me</td>
+              <td class="credit-role">Detective Keller (*Dance Captain)</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Mamma Mia!</td>
+              <td class="credit-role">Sky Masterson</td>
+              <td class="credit-theater">Educational Theatre</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney’s Newsies</td>
+              <td class="credit-role">(not listed on website)</td>
+              <td class="credit-theater">The Phoenix Theatre Company</td>
+            </tr>
+<tr>
+              <td class="credit-show">Disney’s The Little Mermaid</td>
+              <td class="credit-role">(not listed on website)</td>
+              <td class="credit-theater">The Muny</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+<section class="credits-section">
+        <h2>Opera</h2>
+        <table class="credits-table">
+          <tbody>
+            <tr>
+              <td class="credit-show">West Side Story</td>
+              <td class="credit-role">Snowboy</td>
+              <td class="credit-theater">LA Opera</td>
+            </tr>
+<tr>
+              <td class="credit-show">West Side Story</td>
+              <td class="credit-role">(not listed on website)</td>
+              <td class="credit-theater">LA Opera</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+<section class="credits-section">
+        <h2>Film</h2>
+        <table class="credits-table">
+          <tbody>
+            <tr>
+              <td class="credit-show">Generations</td>
+              <td class="credit-role">Young Tommy</td>
+              <td class="credit-theater">Mammoth Pictures</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+<section class="credits-section">
+        <h2>Concerts</h2>
+        <table class="credits-table">
+          <tbody>
+            <tr>
+              <td class="credit-show">La Bayadere</td>
+              <td class="credit-role">Solor</td>
+              <td class="credit-theater">Mountain View CPA</td>
+            </tr>
+<tr>
+              <td class="credit-show">Sleeping Beauty</td>
+              <td class="credit-role">Bluebird, Suitor</td>
+              <td class="credit-theater">South Bay Ballet Arts</td>
+            </tr>
+<tr>
+              <td class="credit-show">The Nutcracker</td>
+              <td class="credit-role">Nutcracker Prince</td>
+              <td class="credit-theater">Los Gatos Ballet</td>
+            </tr>
+<tr>
+              <td class="credit-show">The Nutcracker</td>
+              <td class="credit-role">Sugar Plum Cavalier; Nutcracker Prince; Snow King; Arabian Cavalier</td>
+              <td class="credit-theater">South Bay Ballet Arts</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="training-section">
+        <h2>Training</h2>
+        <table class="training-table">
+          <tbody>
+            <tr>
+                <td class="training-institution">University of Southern California (BFA (in progress))</td>
+                <td class="training-discipline">Musical Theatre</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">South Bay Dance Center</td>
+                <td class="training-discipline">Ballet, Modern, Jazz, Hip Hop, Contemporary, Latin Dance</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Juilliard Summer Dance Intensive</td>
+                <td class="training-discipline">Dance</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Boston Ballet Summer Dance Program</td>
+                <td class="training-discipline">Dance</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Private Study</td>
+                <td class="training-discipline">Voice</td>
+                <td class="training-teacher">Melissa Treinkman; Mario Spinetti; Doug Peck</td>
+              </tr>
+<tr>
+                <td class="training-institution">Private Study</td>
+                <td class="training-discipline">Acting</td>
+                <td class="training-teacher">Hugh O’Gorman; MaryAnn Hu; Jared Gertner; Kate Burton</td>
+              </tr>
+<tr>
+                <td class="training-institution">California Sports Center / ATA Gymnastics</td>
+                <td class="training-discipline">Gymnastics, Acrobatics</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Kristin Chenoweth Broadway Bootcamp</td>
+                <td class="training-discipline">Choreography (Staff Choreographer)</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Kristin Chenoweth Broadway Bootcamp</td>
+                <td class="training-discipline">Choreography (Assistant Choreographer for Kenny Ortega and Tyler Hanes)</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Juilliard Summer Dance Intensive</td>
+                <td class="training-discipline">Dance Intensive</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Boston Ballet Summer Dance Program</td>
+                <td class="training-discipline">Dance Program</td>
+                <td class="training-teacher"></td>
+              </tr>
+<tr>
+                <td class="training-institution">Voice</td>
+                <td class="training-discipline">Voice</td>
+                <td class="training-teacher">Melissa Treinkman; Mario Spinetti; Doug Peck</td>
+              </tr>
+<tr>
+                <td class="training-institution">Acting</td>
+                <td class="training-discipline">Acting</td>
+                <td class="training-teacher">Hugh O’Gorman; MaryAnn Hu; Jared Gertner; Kate Burton</td>
+              </tr>
+<tr>
+                <td class="training-institution">Kristin Chenoweth Broadway Bootcamp</td>
+                <td class="training-discipline">Assistant Choreographer (for Kenny Ortega and Tyler Hanes)</td>
+                <td class="training-teacher">Kenny Ortega; Tyler Hanes</td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="skills-section">
+        <h2>Special Skills</h2>
+        <p><strong>Dance:</strong> Ballet, Modern, Jazz, Hip Hop, Contemporary, Latin Dance</p>
+<p><strong>Special Skills:</strong> Gymnastics, Acrobatics, Basketball, Football, Choreography, ASL, Teen Mr. Dance of America (2019), Outstanding Male Actor in a Principal Role in a Musical (Theatre Bay Area Award), Outstanding Lead Actor (National Youth Arts Award), Best Performance in an Equity Production (Best of Phoenix)</p>
+<p><strong>Instruments:</strong> Piano, Guitar, Drums</p>
+      </section>
+      <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="/api/headshots/file/imported_ee0a9d58-c299-486f-befd-954ef487c5cd.webp" alt="Matt Dean headshot" class="gallery-img" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Portfolio powered by Cue the Resume
+    </footer>
+  </div>
+</body>
+</html>
